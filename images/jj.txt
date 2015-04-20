@@ -1,0 +1,1 @@
+Testing file to see if directory is deleted if there are multiple files
