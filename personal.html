@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="Jacinto's Personal Page" content="">
+    <meta name="Jacinto Chen" content="">
+
+    <title>Jacinto's Personal Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+    	body {
+    		margin-top: 50px;
+    	}
+
+    	.bg-img {
+    		background-image:url('images/personal.jpg');
+    		width: 100%;
+    		background-size: cover;
+    		background-position: center;    		
+    	}
+
+    	#quote {
+    		text-align: center;
+    		padding-top: 150px;
+    	}
+    	#greyBar {
+    		background-color: #eeeeee;
+    		height: 50px;
+    	}
+
+    	.iconMargin {
+    		margin-right: 15px;
+    	}
+
+    	#hobby {
+    		padding-top: 30px;
+    		padding-bottom: 70px;
+    	}
+
+    	#hobby div div p, #travel div div p {
+    		text-align: center;
+    	}
+
+    	#travel {
+    		background-color: #A5D2DA;
+    		padding-top: 40px;
+    		padding-bottom: 70px;
+    	}
+
+    	.travelRowPadding {
+    		padding-top: 50px;
+    	}
+
+    	#contact {
+    		background-color: #222222;
+    		padding-top: 30px;
+    		padding-bottom: 30px;
+    		text-align: center;
+    	}
+
+    	#contact h3 {
+    		color: white;
+    	}
+
+    	#contact a {
+    		color: white;
+    	}
+    </style>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar-collapse">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Personal</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#hobby">Hobby</a></li>
+            <li><a href="#travel">Travel</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container-fluid contentContainer bg-img">
+    	<div class="row">
+    		<div class="col-md-4 col-md-offset-7" id="quote">
+    			<h1>Creatively is Just Connecting the Dots</h1>
+    		</div>
+    	</div>
+    </div>
+
+    <!-- A bar that separate the main photo from the rest of images-->
+    <div class="container-fluid" id="greyBar"></div>
+
+    <div class="container-fluid" id="hobby">
+    	<div class="row">
+    		<div class="col-md-10 col-md-offset-1">
+    			<h2><span class="glyphicon glyphicon-user iconMargin"></span>Hobby</h2>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col-md-10 col-md-offset-1">
+    			<h3>Architecure - <a href="assets/jacinto_chen_final_project.pdf">Final Project</a></h3>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col-md-2 col-md-offset-1">
+    			<a href="images/architecture/South Trace_large.jpg" class="thumbnail">
+    				<img src="images/architecture/South_Trace_thumnail.jpg" alt="2D blueprint">
+    			</a>
+    			<p>2D Blueprint Side View</p>
+    		</div>
+    		<div class="col-md-2">
+    			<a href="images/architecture/terrace_large.jpg" class="thumbnail">
+    				<img src="images/architecture/terrace_thumbnail.jpg" alt="2D blueprint">
+    			</a>
+    			<p>2D Blueprint Top View</p>
+    		</div>
+    		<div class="col-md-2">
+    			<a href="images/architecture/interior_large.png" class="thumbnail">
+    				<img src="images/architecture/interior_thumbnail.jpg" alt="3D Interior Render">
+    			</a>
+    			<p>3D Interior Render with desks</p>
+    		</div>
+    		<div class="col-md-2">
+    			<a href="images/architecture/exterior.jpg" class="thumbnail">
+    				<img src="images/architecture/exterior.jpg" alt="3D Exterior Render">
+    			</a>
+    			<p>3D Exterior Render</p>
+    		</div>
+    	</div>
+
+    	<div class="row">
+    		<div class="col-md-10 col-md-offset-1">
+    			<h3>3D Modeling</h3>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col-md-2 col-md-offset-1">
+    			<a href="images/3d_modeling/tripod_assembled_ghosted.png" class="thumbnail">
+    				<img src="images/3d_modeling/tripod_assembled_ghosted.png" alt="Ghosted Render">
+    			</a>
+    			<p>Customed 360 degree camera mount</p>
+    		</div>
+    		<div class="col-md-2">
+    			<a href="images/3d_modeling/tripod_assembled_pen.png" class="thumbnail">
+    				<img src="images/3d_modeling/tripod_assembled_pen.png" alt="Pen Render">
+    			</a>
+    			<p>Wire render</p>
+    		</div>
+    		<div class="col-md-2">
+    			<a href="images/3d_modeling/tripod_explosion.png" class="thumbnail">
+    				<img src="images/3d_modeling/tripod_explosion.png" alt="Explosion">
+    			</a>
+    			<p>Exploded mount</p>
+    		</div>
+    	</div>
+
+		<div class="row">
+    		<div class="col-md-10 col-md-offset-1">
+    			<h3>3D Printing</h3>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col-md-2 col-md-offset-1">
+    			<a href="images/3d_printing/building_printer.jpg" class="thumbnail">
+    				<img src="images/3d_printing/building_printer_thumbnail.jpg" alt="Building printer">
+    			</a>
+    			<p>Building QU-DB TwoUp</p>
+    		</div>
+    		<div class="col-md-2">
+    			<a href="images/3d_printing/first_prints.jpg" class="thumbnail">
+    				<img src="images/3d_printing/first_prints_thumbnail.jpg" alt="first prints from printer">
+    			</a>
+    			<p>First print weren't very good</p>
+    		</div>
+    		<div class="col-md-2">
+    			<a href="images/3d_printing/whole_setup.jpg" class="thumbnail">
+    				<img src="images/3d_printing/whole_setup_thumbnail.jpg" alt="printer setup">
+    			</a>
+    			<p>Printer after adding printed upgrades</p>
+    		</div>
+    		<div class="col-md-2">
+    			<a href="images/3d_printing/largest_print.jpg" class="thumbnail">
+    				<img src="images/3d_printing/largest_print_thumbnail.jpg" alt="largest print of seal">
+    			</a>
+    			<p>My largest print yet</p>
+    		</div>
+    		<div class="col-md-2">
+    			<a href="images/3d_printing/final_product.jpg" class="thumbnail">
+    				<img src="images/3d_printing/final_product_thumbnail.jpg" alt="3D printed Seal">
+    			</a>
+    			<p>After 12 hours, 4 inches tall Seal</p>
+    		</div>
+    	</div>
+
+    	<div class="row">
+    		<div class="col-md-10 col-md-offset-1">
+    			<h3>Maker</h3>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col-md-2 col-md-offset-1">
+    			<a href="images/maker/pottery.jpg" class="thumbnail">
+    				<img src="images/maker/pottery.jpg" alt="pottery making">
+    			</a>
+    			<p>Pottery</p>
+    		</div>
+    		<div class="col-md-2">
+    			<a href="images/maker/dna_light_box.jpg" class="thumbnail">
+    				<img src="images/maker/dna_light_box_thumbnail.jpg" alt="DNA light box">
+    			</a>
+    			<p>Custom made DNA light box</p>
+    		</div>
+    		<div class="col-md-2">
+    			<a href="images/maker/murphy_bed.jpg" class="thumbnail">
+    				<img src="images/maker/murphy_bed_thumbnail.jpg" alt="Assembly of a Murphy Bed">
+    			</a>
+    			<p>Made a Murphy Bed from scratch</p>
+    		</div>
+    		<div class="col-md-2">
+    			<a href="images/maker/room.jpg" class="thumbnail">
+    				<img src="images/maker/room_thumbnail.jpg" alt="remodeling with dad">
+    			</a>
+    			<p>Helped dad with remodeling</p>
+    		</div>
+    	</div>
+
+    	<div class="row">
+    		<div class="col-md-10 col-md-offset-1">
+    			<h3>Home Gardening</h3>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col-md-2 col-md-offset-1">
+    			<a href="images/gardening/lettuce.jpg" class="thumbnail">
+    				<img src="images/gardening/lettuce_thumbnail.jpg" alt="photo of lettuce">
+    			</a>
+    			<p>Lettuce, Lettuce, Lettuce</p>
+    		</div>
+    		<div class="col-md-2">
+    			<a href="images/gardening/pepper.jpg" class="thumbnail">
+    				<img src="images/gardening/pepper_thumbnail.jpg" alt="Colorful peppers">
+    			</a>
+    			<p>Colorful peppers growing nicely</p>
+    		</div>
+    		<div class="col-md-2">
+    			<a href="images/gardening/strawberry_plants.jpg" class="thumbnail">
+    				<img src="images/gardening/strawberry_plants_thumbnail.jpg" alt="Strawberry plant in a bag">
+    			</a>
+    			<p>Strawberrys in a bag</p>
+    		</div>
+    		<div class="col-md-2">
+    			<a href="images/gardening/strawberry.jpg" class="thumbnail">
+    				<img src="images/gardening/strawberry_thumbnail.jpg" alt="Strawberry fruits">
+    			</a>
+    			<p>Fruits of labor</p>
+    		</div>
+    		<div class="col-md-2">
+    			<a href="images/gardening/tomato.jpg" class="thumbnail">
+    				<img src="images/gardening/tomato.jpg" alt="First tomato">
+    			</a>
+    			<p>It was too early for you</p>
+    		</div>
+    	</div>
+    </div>
+    
+    <div class="container-fluid contentContainer" id="travel">
+    	<div class="row">
+    		<div class="col-md-10 col-md-offset-1">
+    			<h2><span class="glyphicon glyphicon-globe iconMargin"></span>Travels</h2>
+    		</div>
+    	</div>
+    	<div class="row travelRowPadding">
+    		<div class="col-md-2 col-md-offset-2">
+    			<a href="images/travel/panama.jpg" class="thumbnail">
+    				<img src="images/travel/panama_thumbnail.jpg" alt="Panama Canal">
+    			</a>
+    			<p>The Panama Canal</p>
+    		</div>
+    		<div class="col-md-2 col-md-offset-1">
+    			<a href="images/travel/southkorea.jpg" class="thumbnail">
+    				<img src="images/travel/southkorea_thumbnail.jpg" alt="Swan boat">
+    			</a>
+    			<p>South Korea, Seoul's Han River Swan boat</p>
+    		</div>
+    		<div class="col-md-2 col-md-offset-1">
+    			<a href="images/travel/china.jpg" class="thumbnail">
+    				<img src="images/travel/china_thumbnail.jpg" alt="Great Wall of China">
+    			</a>
+    			<p>The Great Wall of China</p>
+    		</div>
+    	</div>
+    	<div class="row travelRowPadding">
+    		<div class="col-md-2 col-md-offset-2">
+    			<a href="images/travel/hongkong.jpg" class="thumbnail">
+    				<img src="images/travel/hongkong_thumbnail.jpg" alt="Shopping Distric in Hong Kong">
+    			</a>
+    			<p>Shopping Distric in Hong Kong</p>
+    		</div>
+    		<div class="col-md-2 col-md-offset-1">
+    			<a href="images/travel/mexico.jpg" class="thumbnail">
+    				<img src="images/travel/mexico.jpg" alt="Mexico Chichen Itza">
+    			</a>
+    			<p>Mexico Chichen Itza</p>
+    		</div>
+    		<div class="col-md-2 col-md-offset-1">
+    			<a href="images/travel/japan.jpg" class="thumbnail">
+    				<img src="images/travel/japan.jpg" alt="Japan Kinosaki Onsen">
+    			</a>
+    			<p>Japan, Kinosaki Onsen's Shrine</p>
+    		</div>
+    	</div>
+
+    </div>
+
+    <div class="container-fluid" id="contact">
+    	<div class="row">
+    		<div class="col-md-10 col-md-offset-1">
+    			<h3><a href="index.html#contact">Contact Me</a></h3>
+    		</div>
+    	</div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- A script that measure window height and set that divider to that minimum height-->
+    <script>
+    	$(".contentContainer").css("min-height", $(window).height());
+    </script>
+
+
+  </body>
+</html>

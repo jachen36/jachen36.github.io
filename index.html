@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<meta name="Jacinto's Resume Website" content="">
-		<meta name="Jacinto Chen" content="">
+		<meta name="Jacinto Chen" content="Jacinto Chen">
 
 		<title>Jacinto Chen Portfolio</title>
 
@@ -17,20 +17,23 @@
 		<!-- Custom styles for this template -->
 		<style type="text/css">
 			body {
-				margin-top: 50px;
+				padding-top: 50px;
+			}
+
+			.navbar-brand {
+				font-size: 200%;
 			}
 
 			.bg-img {
 				background-image: url('images/front.jpg');
 				background-size: cover;
-				background-position: center;
-				height: 650px;
+				width: 100%;
 			}
 
 			#educationBar {
 				background-color: #eeeeee;
-				padding-top: 10px;
-				padding-bottom: 20px;
+				padding-top: 40px;
+				padding-bottom: 10px;
 			}
 
 			.marginTop30px {
@@ -52,7 +55,6 @@
 
 			#skills {
 				background-color: #A5D2DA;
-				min-height: 800px;
 			}
 			#skillsTitle {
 				padding-top: 60px;
@@ -118,9 +120,23 @@
 				padding-bottom: 100px;
 			}
 
+			.secondList {
+				margin-left: 2.5em;
+			}
+
 			#contact {
 				background-color: #222222;
-				min-height: 400px;
+				padding-top: 60px;
+			}
+
+			.contactLabel {
+				color: white;
+			}
+
+			#submit {
+				font-size: 150%;
+				padding-left: 30px;
+				padding-right: 30px;
 			}
 
 		</style>
@@ -136,7 +152,7 @@
 		<![endif]-->
 	</head>
 
-	<body>
+	<body data-spy="scroll" data-target=".navbar-collapse">
 
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
@@ -151,18 +167,18 @@
 				</div>
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="#">Resume</a></li>
-						<li><a href="">Personal</a></li>
-						<li><a href="">Contact</a></li>
+						<li class="active"><a href="#educationBar">Resume</a></li>
+						<li><a href="#skills">Personal</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div>
 		</nav>
 
-		<div class="container-fluid bg-img">
+		<div class="container-fluid contentContainer bg-img">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3">
-					<h1>Some type of quote of something.</h1>
+					<h1>The sky is the limit</h1>
 				</div>
 			</div>
 		</div>
@@ -170,13 +186,13 @@
 		<div class="container-fluid" id="educationBar">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
-					<h1 class="text-center"><span class="glyphicon glyphicon-education"></span> Education - University of California, Berkeley</h1>
+					<h1 class="text-center"><span class="glyphicon glyphicon-education"></span> Education &#45; University of California, Berkeley</h1>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
 					<h2 class="text-center">Molecular &amp; Cellular Biology &lpar;<abbr title="Biochemistry &amp; Molecular Biology">BMB</abbr>&rpar;  <span class="glyphicon glyphicon-plus"></span> 
-					<a tabindex="0" class="btn btn-lg btn-success" id="csPop" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-html="true" title="Computer Science Course" data-content="CS61A - Structure and Interpretation of Computer Programs <br> CS61B - Data Structures <br> CS9A - Matlab for Programmers">CS Courses</a>
+					<a tabindex="0" class="btn btn-lg btn-success" id="csPop" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-html="true" title="Computer Science Course" data-content="CS61A - Structure and Interpretation of Computer Programs <br> CS61B - Data Structures <br> CS9A - Matlab for Programmers <br> MCBC148 - Microbial Genomics and Genetics">CS Courses</a>
 					</h2>
 				</div>
 			</div>
@@ -185,7 +201,7 @@
 		<!--JOBS container start here!!-->
 		<div class="container-fluid" id="job">
 			<div class="row">
-				<div class="col-md-10 col-md-offset-1 marginTop40px">
+				<div class="col-md-10 col-md-offset-1 marginTop40px" id="resume">
 					<h1><span class="glyphicon glyphicon-book"></span> Jobs &amp; Experience</h1>
 				</div>
 			</div>
@@ -198,10 +214,10 @@
 							<img class="media-object img-rounded" src="images/temp.jpg" alt="TEMP" width="140" height="140">
 						</div>
 						<div class="media-body">
-							<h4 class="media-heading">Lygos Inc</h4>
-							<h4 class="pull-left">Research Associate</h4><h4 class="pull-right">Sept 13 - Jan 15</h4>
+							<h4 class="media-heading">Lygos</h4>
+							<h4 class="pull-left">Research Associate II</h4><h4 class="pull-right">Sept 13 &#45; Jan 15</h4>
 							<div class="clearfix"></div>
-							<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+							<p>Undertook many projects ranging from molecular cloning, strain evolution, cellulosic sugar analysis, assisting SOP development of CRISPR, ion exchange chromatography, fabrication for scale&#45;up, equipment maintenance, and lab management.</p>
 						</div>
 					</div>
 				</div>
@@ -213,9 +229,9 @@
 						</div>
 						<div class="media-body">
 							<h4 class="media-heading">Energy Biosciences Institue</h4>
-							<h4 class="pull-left">Undergraduate Researcher</h4><h4 class="pull-right">Jan 12- Jun 13</h4>
+							<h4 class="pull-left">Undergraduate Researcher</h4><h4 class="pull-right">Jan 12 &#45; Jun 13</h4>
 							<div class="clearfix"></div>
-							<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+							<p>Under the guidance of Professor John Dueber. Investigated how synthetic scaffolds improve product titer by observing synthetic complex formation of oligomers and regulated enzyme degradation in E. coli.</p>
 						</div>
 					</div>
 				</div>
@@ -230,9 +246,9 @@
 						</div>
 						<div class="media-body">
 							<h4 class="media-heading">University of California, Berkeley-SynBERC</h4>
-							<h4 class="pull-left">Mentor</h4><h4 class="pull-right">Apr - Aug 12</h4>
+							<h4 class="pull-left">Mentor</h4><h4 class="pull-right">Apr &#45; Aug 12</h4>
 							<div class="clearfix"></div>
-							<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+							<p>Mentored a community college student in developing essential skills needed to become an independent researcher and facilitating his transfer to a four year university</p>
 						</div>
 					</div>
 				</div>
@@ -243,10 +259,10 @@
 							<img class="media-object img-rounded" src="images/temp.jpg" alt="TEMP" width="140" height="140">
 						</div>
 						<div class="media-body">
-							<h4 class="media-heading">University of California, San Francisco - HHMI</h4>
-							<h4 class="pull-left">Laboratory Assistant</h4><h4 class="pull-right">Jan 09 - Aug 11</h4>
+							<h4 class="media-heading">University of California, San Francisco &#45; HHMI</h4>
+							<h4 class="pull-left">Laboratory Assistant</h4><h4 class="pull-right">Jan 09 &#45; Aug 11</h4>
 							<div class="clearfix"></div>
-							<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+							<p>Under the guidance of Prof. Wendell Lim. Investigated the characteristics of biocircuits containing fast-acting (protein-protein interaction) and slow-acting (transcription) circuits. Engineered a methylation Sensor in S.cerevisiae for detection of methyl Halide production in microbes. Regulated gene expression by means of a synthetic chromatin system in S. cerevisiae.</p>
 						</div>
 					</div>
 				</div>
@@ -267,7 +283,7 @@
 						<div class="media-body">
 							<h4 class="media-heading">Best New Application and Best Poster &lpar;Runner up&rpar;</h4>
 							<p>International Genetically Engineered Machine Competition <br>
-							Projec Title: "Synthetic Chromatin: Design Principles of Cellular Memory"</p>
+							Projec Title&#58; &quot;Synthetic Chromatin: Design Principles of Cellular Memory&quot;</p>
 						</div>
 					</div>					
 				</div>
@@ -275,13 +291,11 @@
 
 			<!--Filler div class-->
 			<div class="row marginTop40px"></div>
-
-
 		</div>
 
 
 		<!--SKILLS container============================-->
-		<div class="container-fluid marginTop60px" id="skills">
+		<div class="container-fluid contentContainer marginTop60px" id="skills">
 			<div class="row" id="skillsTitle">
 					<div class="col-md-10 col-md-offset-1">
 						<h1 class="text-left"><span class="glyphicon glyphicon-grain"></span> Talent</h1>
@@ -295,7 +309,7 @@
 					<ul class="nav nav-pills nav-justified" id="skillList">
 						<li class="active"><a href="#csSkills" data-toggle="tab">Tech</a></li>
 						<li><a href="#bSkills" data-toggle="tab">Biology</a></li>
-						<li><a href="#hSkills" data-toggle="tab">Hobby</a></li>
+						<li><a href="#hSkills" data-toggle="tab">Personal</a></li>
 					</ul>
 
 					<!-- Tab panels that contains the content-->
@@ -305,6 +319,10 @@
 								<div class="col-sm-5 marginTop40px">
 									<p class="csLabel text-center"><span class="label label-success">Web Design</span></p>
 
+									<p class="progressTitle">BootStrap</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success" style="width: 60%"></div>
+									</div>
 									<p class="progressTitle">CSS3</p>
 									<div class="progress">
 										<div class="progress-bar progress-bar-success" style="width: 40%"></div>
@@ -321,27 +339,28 @@
 									<div class="progress">
 										<div class="progress-bar progress-bar-success" style="width: 20%"></div>
 									</div>
-									<p class="progressTitle">BootStrap</p>
+									<p class="progressTitle">Illustrator</p>
 									<div class="progress">
-										<div class="progress-bar progress-bar-success" style="width: 60%"></div>
-									</div>
-									<p class="progressTitle">WordPress</p>
-									<div class="progress">
-										<div class="progress-bar progress-bar-success" style="width: 50%"></div>
-									</div>										
+										<div class="progress-bar progress-bar-success" style="width: 30%"></div>
+									</div>	
+																	
 								</div>
 
 								<div class="col-sm-5 col-sm-offset-1 marginTop40px">
 									<p class="csLabel text-center"><span class="label label-success">Programming</span></p>
 
-									<p class="progressTitle">Python</p>
+									<p class="progressTitle">Android</p>
 									<div class="progress">
-										<div class="progress-bar progress-bar-success" style="width: 80%"></div>
+										<div class="progress-bar progress-bar-success" style="width: 90%"></div>
 									</div>
 									<p class="progressTitle">Java</p>
 									<div class="progress">
 										<div class="progress-bar progress-bar-success" style="width: 75%"></div>
-									</div>									
+									</div>	
+									<p class="progressTitle">Python</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success" style="width: 70%"></div>
+									</div>					
 									<p class="progressTitle">C++</p>
 									<div class="progress">
 										<div class="progress-bar progress-bar-success" style="width: 30%"></div>
@@ -350,6 +369,16 @@
 									<div class="progress">
 										<div class="progress-bar progress-bar-success" style="width: 20%"></div>
 									</div>
+									<p class="progressTitle">My Android App &#45; Play Store Link</p>
+									<div>
+										<p>
+											<span class="glyphicon glyphicon glyphicon-heart" style="color:red; font-size: 150%;"></span>
+											<a href="https://play.google.com/store/apps/details?id=com.jacintochen.currencyexchange&hl=en"
+											style="font-size: 150%; font-weight: bold; margin-left: 10px;">Exchange</a>
+										</p>
+										
+									</div>
+
 
 								</div>
 
@@ -375,6 +404,7 @@
 										<li>CRISPR</li>
 										<li>High Through Screening</li>
 										<li>Live Cell Flow Cytometry</li>
+										<li>Chromatography</li>
 									</ul>
 								</div>
 
@@ -383,6 +413,7 @@
 										<li>ELISA</li>
 										<li>HPLC</li>
 										<li>Organic Chemistry</li>
+										<li>Bioinformatics</li>
 										<li>Fabrication</li>
 										<li>Lab Management</li>
 									</ul>
@@ -391,7 +422,44 @@
 							</div>
 
 						</div>
-						<div class="tab-pane fade" id="hSkills">I won't earn money from these skills but they are defintely useful</div>
+						<div class="tab-pane fade" id="hSkills">
+							<div class="row marginTop40px">
+								<div class="col-md-8 col-md-offset-2">
+									<ul class="list-unstyled">
+										<li><h1>Hobby &#45; Pictures</h1></li>
+										<li>
+											<ul class="list-inline secondList">
+												<li>3D Modeling</li>
+												<li>3D Printing</li>
+												<li>Maker</li>
+												<li>Gardening</li>
+											</ul>
+										</li>
+										<li><h1>Look Ma, I&#39;m On The News</h1></li>
+										<ul class="list-unstyled secondList">
+											<li><p><strong>Lygos</strong></p></li>
+											<li><a href="http://goo.gl/BGKaQX">Life-science startups find new life in used equipment</a></li>
+											<li><p><strong>iGEM</strong></p></li>
+											<li><a href="http://goo.gl/agp3jc">High school biowizards break new ground in winnng competition</a></li>
+											<li><a href="http://goo.gl/hF3zSD">English&#44; Algebra&#44; Phys Ed &#46;&#46;&#46; and Biotech</a></li>
+											<li><a href="http://goo.gl/kxUT9P">Students do cutting&#45;edge biotech work</a></li>
+											<li><a href="http://goo.gl/5AsXTW">Local teens prepare for MIT competition</a></li>
+											<li><a href="http://goo.gl/bUBxAN">UCSF&#45;led high school team wins national honors for genetic engineering</a></li>
+										</ul>
+										<li></li>
+										<li><h1>Adventures &#45; Pictures</h1></li>
+										<ul class="list-inline secondList">
+											<li>Panama</li>
+											<li>South Korea</li>
+											<li>China</li>
+											<li>Hong&#45;Kong</li>
+											<li>Mexico</li>
+											<li>Japan</li>
+										</ul>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 
 				</div>
@@ -405,26 +473,46 @@
 			<div class="clearfix"></div>
 
 			<!--Contact Section=========-->
-			<div class="container-fluid" id="contact" >
-				<div class="row text-center marginTop40px" style="color: white;">
-					<h1>Contact Me</h1>
-					<p class="lead"><span class="glyphicon glyphicon-road" style="padding-right: 10px;"></span> Located in San Francisco Bay Area</p>
+			<div class="container-fluid contentContainer" id="contact" >
+				<div class="row text-center">
+					<h1 class="contactLabel">Contact Me</h1>
+					<p class="lead contactLabel"><span class="glyphicon glyphicon-road" style="padding-right: 10px;"></span> Located in San Francisco Bay Area</p>
 				</div>
-				<div class="row">
-					<div class="col-sm-12 col-md-6 col-md-offset-3">
-						<div class="col-sm-9">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Email Address">
-							</div>
-							<div class="form-group">
-								<textarea class="form-control" placeholder="I would love to hear from you." rows="5"></textarea>
-							</div>
-						</div>
-						<div class="col-sm-3">
-							<button class="btn btn-success btn-lg" style="font-size: 2em; padding-top: 62px; padding-bottom: 62px;">SEND</button>
+				<form class="form-horizontal" role="form" method="post" action="">
+					<div class="form-group">
+						<label for="name" class="col-sm-2 col-sm-offset-1 control-label contactLabel">Name</label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="name" name="name" placeholder="First &amp; Last Name" value="">
 						</div>
 					</div>
-				</div>
+					<div class="form-group">
+						<label for="email" class="col-sm-2 control-label col-sm-offset-1 contactLabel">Email</label>
+						<div class="col-sm-6">
+							<input type="email" class="form-control" id="email" name="email" placeholder="example&#64;domain.com" value="">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="message" class="col-sm-2 col-sm-offset-1 control-label contactLabel">message</label>
+						<div class="col-sm-6">
+							<textarea class="form-control" placeholder="I would love to hear from you." rows="5"></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="human" class="col-sm-2 col-sm-offset-1 control-label contactLabel">2 &#43; 3 &#61; &#63;</label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="human" name="human" placeholder="I am not a robot">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-9 col-sm-offset-3">
+							<input id="submit" name="submit" type="submit" value="Send" class="btn btn-success">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-9 col-sm-offset-3">
+							<!-- Error message here -->
+						</div>
+				</form>
 			</div>
 
 
@@ -437,11 +525,13 @@
 		<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 
 		<script>
+			//A script that measure window height and set that divider to that minimum height
+			$(".contentContainer").css("min-height", $(window).height());
+
+			// Popout function for cs course button
 			$(function(){
 				$('#csPop').popover();
-			})
-
-
+			});
 		</script>
 	</body>
 </html>
