@@ -37,6 +37,10 @@
 				padding-bottom: 10px;
 			}
 
+			#majorBMB {
+				font-size: 200%;
+			}
+
 			.marginTop30px {
 				margin-top: 30px;
 			}
@@ -196,9 +200,9 @@
 			</div>
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
-					<h2 class="text-center">Molecular &amp; Cellular Biology &lpar;<abbr title="Biochemistry &amp; Molecular Biology">BMB</abbr>&rpar;  <span class="glyphicon glyphicon-plus"></span> 
+					<p class="text-center" id="majorBMB">Molecular &amp; Cellular Biology &lpar;<abbr title="Biochemistry &amp; Molecular Biology">BMB</abbr>&rpar;  <span class="glyphicon glyphicon-plus"></span> 
 					<a tabindex="0" class="btn btn-lg btn-success" id="csPop" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-html="true" title="Computer Science Course" data-content="CS61A - Structure and Interpretation of Computer Programs <br> CS61B - Data Structures <br> CS9A - Matlab for Programmers <br> MCBC148 - Microbial Genomics and Genetics">CS Courses</a>
-					</h2>
+					</p>
 				</div>
 			</div>
 		</div>
