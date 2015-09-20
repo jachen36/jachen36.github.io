@@ -27,12 +27,13 @@
 			.bg-img {
 				background-image: url('images/front.jpg');
 				background-size: cover;
+				background-position: center;
 				width: 100%;
 			}
 
 			#educationBar {
 				background-color: #eeeeee;
-				padding-top: 40px;
+				padding-top: 35px;
 				padding-bottom: 10px;
 			}
 
@@ -82,6 +83,7 @@
 			#csPop {
 				font-size: 75%;
 				font-weight: bold;
+				margin-top: 5px;
 			}
 
 			.popover {
@@ -127,6 +129,7 @@
 			#contact {
 				background-color: #222222;
 				padding-top: 60px;
+				padding-bottom: 60px;
 			}
 
 			.contactLabel {
@@ -162,13 +165,15 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="#">Jacinto</a>
 				</div>
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="active"><a href="#educationBar">Resume</a></li>
-						<li><a href="#skills">Personal</a></li>
+						<li><a href="#skills">Talent</a></li>
+						<li><a href="personal.html">Personal</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
@@ -426,7 +431,7 @@
 							<div class="row marginTop40px">
 								<div class="col-md-8 col-md-offset-2">
 									<ul class="list-unstyled">
-										<li><h1>Hobby &#45; Pictures</h1></li>
+										<li><h1>Hobby &#45; <a href="personal.html">Pictures</a></h1></li>
 										<li>
 											<ul class="list-inline secondList">
 												<li>3D Modeling</li>
@@ -473,7 +478,7 @@
 			<div class="clearfix"></div>
 
 			<!--Contact Section=========-->
-			<div class="container-fluid contentContainer" id="contact" >
+			<div class="container-fluid" id="contact" >
 				<div class="row text-center">
 					<h1 class="contactLabel">Contact Me</h1>
 					<p class="lead contactLabel"><span class="glyphicon glyphicon-road" style="padding-right: 10px;"></span> Located in San Francisco Bay Area</p>
@@ -510,7 +515,6 @@
 					</div>
 					<div class="form-group">
 						<div class="col-sm-9 col-sm-offset-3">
-							<!-- Error message here -->
 						</div>
 				</form>
 			</div>
