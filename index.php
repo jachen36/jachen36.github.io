@@ -15,138 +15,9 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
 		<!-- Custom styles for this template -->
-		<style type="text/css">
-			body {
-				padding-top: 50px;
-			}
-
-			.navbar-brand {
-				font-size: 200%;
-			}
-
-			.bg-img {
-				background-image: url('images/front.jpg');
-				background-size: cover;
-				background-position: center;
-				width: 100%;
-			}
-
-			#educationBar {
-				background-color: #eeeeee;
-				padding-top: 35px;
-				padding-bottom: 10px;
-			}
-
-			#majorBMB {
-				font-size: 200%;
-			}
-
-			.marginTop30px {
-				margin-top: 30px;
-			}
-			.marginTop40px {
-				margin-top:40px;
-			}
-			.marginTop50px {
-				margin-top: 50px;
-			}
-			.marginTop60px {
-				margin-top: 60px;
-			}
-
-			.marginTop100px {
-				margin-top: 100px;
-			}
-
-			#skills {
-				background-color: #A5D2DA;
-			}
-			#skillsTitle {
-				padding-top: 60px;
-				padding-bottom: 30px;
-			}
-
-			.iconList li {
-				padding: 0 0 40px 20px;
-				display: block;
-				position: relative;
-				font-size: 1.9em;
-				font-weight: bold;
-			}
-
-			.iconList li:before {
-				font-family: 'Glyphicons Halflings';
-				position: absolute;
-				left: -10px;
-				top: 3px;
-				font-size: 80%;
-				content:"\e239";
-				color: #5cb85c;
-			}
-
-			#csPop {
-				font-size: 75%;
-				font-weight: bold;
-				margin-top: 5px;
-			}
-
-			.popover {
-				min-width: 500px;
-			}
-			.popover-title {
-				font-size: 2em;
-			}
-			.popover-content {
-				font-size: 1.2em;
-			}
-
-			.progressTitle {
-				font-size: 1.5em;
-				font-weight: bold;
-				padding: 0px;
-				margin-bottom: 3px;
-				margin-top: 20px;
-			}
-
-			.csLabel {
-				font-size: 3em;
-			}
-
-			#skillList {
-				font-size: 2.5em;
-				font-weight: bold;
-				color: black;
-			}
-
-			#skillList>li.active>a, #skillList>li.active>a:focus, #skillList>li.active>a:hover {
-				background-color: #5cb85c;
-			}
-			
-			#skillPanel {
-				padding-bottom: 100px;
-			}
-
-			.secondList {
-				margin-left: 2.5em;
-			}
-
-			#contact {
-				background-color: #222222;
-				padding-top: 60px;
-				padding-bottom: 60px;
-			}
-
-			.contactLabel {
-				color: white;
-			}
-
-			#submit {
-				font-size: 150%;
-				padding-left: 30px;
-				padding-right: 30px;
-			}
-
-		</style>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/index.css">
+	
 
 		<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -186,8 +57,8 @@
 
 		<div class="container-fluid contentContainer bg-img">
 			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
-					<h1>The sky is the limit</h1>
+				<div class="col-md-6 col-md-offset-3" >
+					<p id="quote">The Sky Is The Limit</p>
 				</div>
 			</div>
 		</div>
@@ -220,7 +91,7 @@
 				<div class="col-md-5 col-md-offset-1 marginTop50px">
 					<div class="media">
 						<div class="media-left">
-							<img class="media-object img-rounded" src="images/temp.jpg" alt="TEMP" width="140" height="140">
+							<img class="media-object img-rounded" src="images/logos/lygos.jpeg" alt="Lygos Logo" width="140" height="140">
 						</div>
 						<div class="media-body">
 							<h4 class="media-heading">Lygos</h4>
@@ -234,7 +105,7 @@
 				<div class="col-md-5 marginTop50px">
 					<div class="media">
 						<div class="media-left">
-							<img class="media-object img-rounded" src="images/temp.jpg" alt="TEMP" width="140" height="140">
+							<img class="media-object img-rounded" src="images/logos/ebilogo.png" alt="EBI Logo" width="140" height="140">
 						</div>
 						<div class="media-body">
 							<h4 class="media-heading">Energy Biosciences Institue</h4>
@@ -251,7 +122,7 @@
 				<div class="col-md-5 col-md-offset-1 marginTop50px">
 					<div class="media">
 						<div class="media-left">
-							<img class="media-object img-rounded" src="images/temp.jpg" alt="TEMP" width="140" height="140">
+							<img class="media-object img-rounded" src="images/logos/ucb.png" alt="UCB Logo" width="140" height="140">
 						</div>
 						<div class="media-body">
 							<h4 class="media-heading">University of California, Berkeley-SynBERC</h4>
@@ -265,11 +136,11 @@
 				<div class="col-md-5 marginTop50px">
 					<div class="media">
 						<div class="media-left">
-							<img class="media-object img-rounded" src="images/temp.jpg" alt="TEMP" width="140" height="140">
+							<img class="media-object img-rounded" src="images/logos/hhmi_square.jpg" alt="HHMI Logo" width="140" height="140">
 						</div>
 						<div class="media-body">
 							<h4 class="media-heading">University of California, San Francisco &#45; HHMI</h4>
-							<h4 class="pull-left">Laboratory Assistant</h4><h4 class="pull-right">Jan 09 &#45; Aug 11</h4>
+							<h4 class="pull-left">Junior Specialist</h4><h4 class="pull-right">Jan 09 &#45; Aug 11</h4>
 							<div class="clearfix"></div>
 							<p>Under the guidance of Prof. Wendell Lim. Investigated the characteristics of biocircuits containing fast-acting (protein-protein interaction) and slow-acting (transcription) circuits. Engineered a methylation Sensor in S.cerevisiae for detection of methyl Halide production in microbes. Regulated gene expression by means of a synthetic chromatin system in S. cerevisiae.</p>
 						</div>
@@ -278,7 +149,7 @@
 			</div>
 
 			<!--AWARDS=====================-->
-			<div class="row marginTop60px">
+			<div class="row marginTop30px">
 				<div class="col-md-10 col-md-offset-1">
 					<h1><span class="glyphicon glyphicon-star"></span> Awards</h1>
 				</div>
@@ -287,12 +158,13 @@
 				<div class="col-md-10 col-md-offset-1">
 					<div class="media">
 						<div class="media-left">
-							<img class="media-object img-rounded" src="images/temp.jpg" alt="TEMP" width="140" height="140">
+							<img class="media-object img-rounded" src="images/logos/ucsf2008logo.jpg" alt="UCSF iGEM Logo" width="140" height="140">
 						</div>
 						<div class="media-body">
 							<h4 class="media-heading">Best New Application and Best Poster &lpar;Runner up&rpar;</h4>
 							<p>International Genetically Engineered Machine Competition <br>
 							Projec Title&#58; &quot;Synthetic Chromatin: Design Principles of Cellular Memory&quot;</p>
+							<a href="http://2008.igem.org/Team:UCSF">UCSF iGEM 2008</a>
 						</div>
 					</div>					
 				</div>
@@ -435,7 +307,7 @@
 							<div class="row marginTop40px">
 								<div class="col-md-8 col-md-offset-2">
 									<ul class="list-unstyled">
-										<li><h1>Hobby &#45; <a href="personal.html">Pictures</a></h1></li>
+										<li><h1>Hobby &#45; <a href="personal.html#hobby">Pictures</a></h1></li>
 										<li>
 											<ul class="list-inline secondList">
 												<li>3D Modeling</li>

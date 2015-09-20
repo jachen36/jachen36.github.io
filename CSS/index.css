@@ -1,0 +1,128 @@
+.bg-img {
+	background-image: url('../images/front.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+}
+
+#quote {
+	text-align: center;
+	font-family: papyrus;
+	font-size: 600%;
+	padding-top: 200px;
+}
+
+#educationBar {
+	background-color: #eeeeee;
+	padding-top: 35px;
+	padding-bottom: 20px;
+}
+
+#majorBMB {
+	font-size: 200%;
+}
+
+.marginTop30px {
+	margin-top: 30px;
+}
+.marginTop40px {
+	margin-top:40px;
+}
+.marginTop50px {
+	margin-top: 50px;
+}
+.marginTop60px {
+	margin-top: 60px;
+}
+
+.marginTop100px {
+	margin-top: 100px;
+}
+
+#skills {
+	background-color: #A5D2DA;
+}
+#skillsTitle {
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+
+.iconList li {
+	padding: 0 0 40px 20px;
+	display: block;
+	position: relative;
+	font-size: 1.9em;
+	font-weight: bold;
+}
+
+.iconList li:before {
+	font-family: 'Glyphicons Halflings';
+	position: absolute;
+	left: -10px;
+	top: 3px;
+	font-size: 80%;
+	content:"\e239";
+	color: #5cb85c;
+}
+
+#csPop {
+	font-size: 75%;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+.popover {
+	min-width: 500px;
+}
+.popover-title {
+	font-size: 2em;
+}
+.popover-content {
+	font-size: 1.2em;
+}
+
+.progressTitle {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0px;
+	margin-bottom: 3px;
+	margin-top: 20px;
+}
+
+.csLabel {
+	font-size: 3em;
+}
+
+#skillList {
+	font-size: 2.5em;
+	font-weight: bold;
+	color: black;
+}
+
+#skillList>li.active>a, #skillList>li.active>a:focus, #skillList>li.active>a:hover {
+	background-color: #5cb85c;
+}
+
+#skillPanel {
+	padding-bottom: 100px;
+}
+
+.secondList {
+	margin-left: 2.5em;
+}
+
+#contact {
+	background-color: #222222;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.contactLabel {
+	color: white;
+}
+
+#submit {
+	font-size: 150%;
+	padding-left: 30px;
+	padding-right: 30px;
+}
